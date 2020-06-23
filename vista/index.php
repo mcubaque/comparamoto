@@ -77,8 +77,8 @@ include '../modelo/conexion.php';
                 <li><a href="#">Drop Down 5</a></li>
               </ul>
             </li>
-            <li><a href="#contact">Registrese</a></li>
-            <li><a href="#team">Login</a></li>
+            <li><a href="#team">Equipo.</a></li>
+            <li><a href="#contact">Contacto</a></li>
 
             <li class="get-started"><a href="#why-us">Compara Ahora</a></li>
           </ul>
@@ -138,8 +138,8 @@ include '../modelo/conexion.php';
       <div class="container">
 
         <div class="row content">
-          <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
-            <h2>ComparaTuMoto es el lugar indicado</h2>
+          <div class="col-lg-6 col-xs-12" data-aos="fade-center" data-aos-delay="100">
+            <h2>Compara Tu Moto es el lugar indicado</h2>
             <h3>Simplemente te ponemos la informacion a la mano. Tu comparas, tu analizas, tu decides. </h3>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
@@ -204,7 +204,7 @@ include '../modelo/conexion.php';
                  <h3>Moto 1</h3> 
                     <select name=marca1 onchange="cambia_referencia1()"> 
                     <option value="0" selected>Seleccione... 
-                    <option value="1">Aprilla 
+                    <option value="1">Aprilia 
                     <option value="2">Akt 
                     <option value="3">Bajaj 
                     <option value="4">Benelli 
@@ -219,7 +219,7 @@ include '../modelo/conexion.php';
                   <h3>Moto 2</h3> 
                     <select name=marca2 onchange="cambia_referencia2()"> 
                     <option value="0" selected>Seleccione... 
-                    <option value="1">Aprilla 
+                    <option value="1">Aprilia 
                     <option value="2">AKT 
                     <option value="3">Bajaj 
                     <option value="4">Benelli 
@@ -238,10 +238,10 @@ include '../modelo/conexion.php';
 
 
                   <script>
-                  var referencias1_1=new Array("-","AF1 Futura","Amico","Area 51","Arrecife","Atlantic 125","...");
-                  var referencias1_2=new Array("-","NKD 125","RTX150","CR4 125","CR5 200","NKD Metal","...");
-                  var referencias1_3=new Array("-","Discover150s","Boxer 100","Pulsar NS 200","Pusar RS 200","...");
-                  var referencias1_4=new Array("-","TNT 25","TNT 302","TNT 600","...");
+                  var referencias1_1=new Array("-","STX-150","Amico","Area-51","Arrecife","Atlantic-125","...");
+                  var referencias1_2=new Array("-","NKD-125","RTX-150","SPECIAL-110X","FLEX-125","CR4-125","CR5-200","...");
+                  var referencias1_3=new Array("-","Discover-150s","Boxer-100","Pulsar-NS-200","Pusar-RS-200","...");
+                  var referencias1_4=new Array("-","TNT-25","TNT-302","TNT-600","...");
 
                   var todasReferencias1 = [
                     [],
@@ -280,10 +280,10 @@ include '../modelo/conexion.php';
                     document.f1.referencia1.options[0].selected = true 
                 }
 
-                  var referencias2_1=new Array("-","AF1 Futura","Amico","Area 51","Arrecife","Atlantic 125","...");
-                  var referencias2_2=new Array("-","NKD 125","RTX150","CR4 125","CR5 200","NKD Metal","...");
-                  var referencias2_3=new Array("-","Discover150s","Boxer 100","Pulsar NS 200","Pusar RS 200","...");
-                  var referencias2_4=new Array("-","TNT 25","TNT 302","TNT 600","...");
+                  var referencias2_1=new Array("-","STX-150","Amico","Area-51","Arrecife","Atlantic-125","...");
+                  var referencias2_2=new Array("-","NKD-125","RTX-150","SPECIAL-110X","FLEX-125","CR4-125","CR5-200","...");
+                  var referencias2_3=new Array("-","Discover-150s","Boxer-100","Pulsar-NS-200","Pusar-RS-200","...");
+                  var referencias2_4=new Array("-","TNT-25","TNT-302","TNT-600","...");
 
                   var todasReferencias2 = [
                     [],
@@ -364,13 +364,13 @@ include '../modelo/conexion.php';
                   <div class="pic"><img src="assets/img/team/team-12.jpg" class="img-fluid" alt=""></div>
                   <div class="member-info">
                     <h4>Marco Cubaque</h4>
-                    <span>Director ejecutivo</span>
+                    <span>Director general</span>
                     <p>Tecnologo en Analisis y Desarrollo de Sistemas de Informacion</p>
                     <div class="social">
                       <a href="https://twitter.com/cubaque_marco"><i class="ri-twitter-fill"></i></a>
                       <a href="https://www.facebook.com/marco.cubaque.9"><i class="ri-facebook-fill"></i></a>
                       <a href="https://www.instagram.com/marcocubaque/"><i class="ri-instagram-fill"></i></a>
-                      <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
+                      <a href="https://www.linkedin.com/in/marco-antonio-cubaque-175391159"> <i class="ri-linkedin-box-fill"></i> </a>
                     </div>
                   </div>
                 </div>
@@ -567,7 +567,7 @@ include '../modelo/conexion.php';
           <!-- You can delete the links only if you purchased the pro version. -->
           <!-- Licensing information: https://bootstrapmade.com/license/ -->
           <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/bethany-free-onepage-bootstrap-theme/ -->
-          Designed by <a href="#">mcubaque</a>
+          Designed by <a href="#team">mcubaque</a>
         </div>
       </div>
       <div class="social-links text-center text-md-right pt-3 pt-md-0">

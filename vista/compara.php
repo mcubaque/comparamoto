@@ -104,9 +104,10 @@ include '../modelo/conexion.php';
               <p>
                 <table class="table-responsive table-dark text-center mt-3">
                   <thead>
-                    <th class="text-center">ITEM</th>
-                    <th class="text-center">MOTO 1</th>
-                    <th class="text-center">MOTO 2</th>
+                    <th class="text-center">Referencia</th>
+                    <th class="text-center">Precio</th>
+                    <th class="text-center">Motor</th>
+                    <th class="text-center">Cilindrada</th>
                     <th class="text-center">Potencia</th>
                     <th class="text-center">Transmision</th>
                     <th class="text-center">Ciclo</th>
@@ -123,6 +124,11 @@ include '../modelo/conexion.php';
                     <th class="text-center">Altura</th>
                     <th class="text-center">Peso</th>
                     <th class="text-center">Tanque</th>
+                    <th class="text-center">Compresion</th>
+                    <th class="text-center">Suspension D</th>
+                    <th class="text-center">Suspencion T</th>
+                    <th class="text-center">Encendido</th>
+                    <th class="text-center">Caja</th>
                   </thead>
                 <?php 
                   $referencia1 = isset($_GET['referencia1']) ? $_GET['referencia1'] : "0";
@@ -144,6 +150,9 @@ include '../modelo/conexion.php';
                                 echo  "<div class='precio' style=''>{$filas['precio']}</div>";
                               echo "</td>";
                               echo "<td>";
+                                echo  "<div class='motor' style=''>{$filas['motor']}</div>";
+                              echo "</td>";
+                              echo "<td>";
                                 echo  "<div class='cilindrada' style=''>{$filas['cilindrada']}</div>";
                               echo "</td>";
                               echo "<td>";
@@ -193,6 +202,21 @@ include '../modelo/conexion.php';
                               echo "</td>";
                               echo "<td>";
                                 echo  "<div class='capacidad_deposito' style=''>{$filas['capacidad_deposito']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='compresion' style=''>{$filas['compresion']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='suspension_D' style=''>{$filas['suspension_D']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='suspension_T' style=''>{$filas['suspension_T']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='encendido' style=''>{$filas['encendido']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='caja_vel' style=''>{$filas['caja_vel']}</div>";
                               echo "</td>";
                               echo "</tr>";   
                       }
@@ -213,6 +237,9 @@ include '../modelo/conexion.php';
                                 echo  "<div class='precio' style=''>{$filas['precio']}</div>";
                               echo "</td>";
                               echo "<td>";
+                                echo  "<div class='motor' style=''>{$filas['motor']}</div>";
+                              echo "</td>";
+                              echo "<td>";
                                 echo  "<div class='cilindrada' style=''>{$filas['cilindrada']}</div>";
                               echo "</td>";
                               echo "<td>";
@@ -262,6 +289,21 @@ include '../modelo/conexion.php';
                               echo "</td>";
                               echo "<td>";
                                 echo  "<div class='capacidad_deposito' style=''>{$filas['capacidad_deposito']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='compresion' style=''>{$filas['compresion']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='suspension_D' style=''>{$filas['suspension_D']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='suspension_T' style=''>{$filas['suspension_T']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='encendido' style=''>{$filas['encendido']}</div>";
+                              echo "</td>";
+                              echo "<td>";
+                                echo  "<div class='caja_vel' style=''>{$filas['caja_vel']}</div>";
                               echo "</td>";
                               echo "</tr>";   
                       }   
