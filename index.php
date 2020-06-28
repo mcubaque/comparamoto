@@ -1,6 +1,6 @@
 <?php
 // connect to database
-include '../modelo/conexion.php';
+include 'modelo/conexion.php';
 ?>
 
 
@@ -16,23 +16,26 @@ include '../modelo/conexion.php';
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="vista/assets/img/favicon.png" rel="icon">
+  <link href="vista/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+  <!-- CDN JQUERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
   <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="vista/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vista/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="vista/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="vista/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="vista/assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="vista/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="vista/assets/vendor/aos/aos.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="vista/assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
   * Template Name: Bethany - v2.0.0
@@ -48,18 +51,19 @@ include '../modelo/conexion.php';
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container">
       <div class="header-container d-flex align-items-center">
-        <div class="logo mr-auto">
+        <div class="logo ">
           <h1 class="text-light"><a href="index.php"><span>ComparaTuMoto</span></a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
 
         <nav class="nav-menu d-none d-lg-block">
+
           <ul>
             <li class="active"><a href="#header">Inicio</a></li>
             <li><a href="#about">Nosotros</a></li>
             <li><a href="#services">Servicios</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
             <li class="drop-down"><a href="">Menú</a>
               <ul>
                 <li><a href="#">Drop Down 1</a></li>
@@ -79,10 +83,9 @@ include '../modelo/conexion.php';
             </li>
             <li><a href="#team">Equipo.</a></li>
             <li><a href="#contact">Contacto</a></li>
-
-            <li class="get-started"><a href="#why-us">Compara Ahora</a></li>
           </ul>
         </nav><!-- .nav-menu -->
+        <button type="button" class="btn btn-success" id="myBtn">Login</button> 
       </div><!-- End Header Container -->
     </div>
   </header><!-- End Header -->
@@ -105,27 +108,27 @@ include '../modelo/conexion.php';
         <div class="row">
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="100">
-            <img src="assets/img/clients/client-7.png" class="img-fluid" alt="">
+            <img src="vista/assets/img/clients/client-7.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="200">
-            <img src="assets/img/clients/client-8.png" class="img-fluid" alt="">
+            <img src="vista/assets/img/clients/client-8.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="300">
-            <img src="assets/img/clients/client-9.png" class="img-fluid" alt="">
+            <img src="vista/assets/img/clients/client-9.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="400">
-            <img src="assets/img/clients/client-10.png" class="img-fluid" alt="">
+            <img src="vista/assets/img/clients/client-10.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="500">
-            <img src="assets/img/clients/client-11.png" class="img-fluid" alt="">
+            <img src="vista/assets/img/clients/client-11.png" class="img-fluid" alt="">
           </div>
 
           <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center" data-aos="zoom-in" data-aos-delay="600">
-            <img src="assets/img/clients/client-12.png" class="img-fluid" alt="">
+            <img src="vista/assets/img/clients/client-12.png" class="img-fluid" alt="">
           </div>
 
         </div>
@@ -200,7 +203,7 @@ include '../modelo/conexion.php';
           <div class="col-lg-12 d-flex justify-content-center text-center align-items-stretch" data-aos="fade-right">
             <div class="content">
               <p>
-                 <form action="compara.php" method="get" name="f1">
+                 <form action="vista/compara.php" method="get" name="f1">
                  <h3>Moto 1</h3> 
                     <select name=marca1 onchange="cambia_referencia1()"> 
                     <option value="0" selected>Seleccione... 
@@ -361,7 +364,7 @@ include '../modelo/conexion.php';
 
               <div class="col-lg-6">
                 <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                  <div class="pic"><img src="assets/img/team/team-12.jpg" class="img-fluid" alt=""></div>
+                  <div class="pic"><img src="vista/assets/img/team/team-12.jpg" class="img-fluid" alt=""></div>
                   <div class="member-info">
                     <h4>Marco Cubaque</h4>
                     <span>Director general</span>
@@ -580,22 +583,64 @@ include '../modelo/conexion.php';
     </div>
   </footer><!-- End Footer -->
 
+    <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <h4><span class="glyphicon glyphicon-lock"></span> Login</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;"> 
+          <form id="form1" name="form1" method="post" action="controlador/validacionlogin.php" role="form">
+            <div class="form-group">
+              <label for="usrname"><span class="glyphicon glyphicon-user"></span> Email</label>
+              <input name="email" type="text" id="email" class="form-control"  placeholder="Ingrese su correo" required="">
+            </div>
+            <div class="form-group">
+              <label for="psw"><span class="glyphicon glyphicon-eye-open"></span> Contraseña</label>
+              <input name="password" type="password" id="password" type="text" class="form-control"  placeholder="Ingrese contraseña" required>
+            </div>
+            <div class="checkbox">
+              <label><input type="checkbox" value="" checked>Recordar mis credenciales</label>
+            </div>
+              <button type="submit" class="btn btn-success btn-block"><span class="glyphicon glyphicon-off"></span> Aceptar</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-success btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancelar</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+  <script>
+    $(document).ready(function(){
+        $("#myBtn").click(function(){
+            $("#myModal").modal();
+        });
+  });
+</script>
+
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/jquery/jquery.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
-  <script src="assets/vendor/counterup/counterup.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/venobox/venobox.min.js"></script>
-  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="vista/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="vista/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vista/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="vista/assets/vendor/php-email-form/validate.js"></script>
+  <script src="vista/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="vista/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="vista/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="vista/assets/vendor/venobox/venobox.min.js"></script>
+  <script src="vista/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="vista/assets/vendor/aos/aos.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="vista/assets/js/main.js"></script>
 
 </body>
 

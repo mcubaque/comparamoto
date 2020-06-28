@@ -18,9 +18,9 @@ include '../modelo/conexion.php';
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+  <!-- CDN JQERY -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +49,7 @@ include '../modelo/conexion.php';
     <div class="container">
       <div class="header-container d-flex align-items-center">
         <div class="logo mr-auto">
-          <h1 class="text-light"><a href="index.php"><span>ComparaTuMoto</span></a></h1>
+          <h1 class="text-light"><a href="../index.php"><span>ComparaTuMoto</span></a></h1>
           <!-- Uncomment below if you prefer to use an image logo -->
           <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
         </div>
@@ -78,7 +78,7 @@ include '../modelo/conexion.php';
               </ul>
             </li>
             <li><a href="#contact">Registrese</a></li>
-            <li><a href="#team">Login</a></li>
+            <li><a href="#myBtn" id="myBtn">Login</a></li>
 
             <li class="get-started"><a href="#why-us">Compara Ahora</a></li>
           </ul>
@@ -102,7 +102,7 @@ include '../modelo/conexion.php';
               <br>
               <h2>Resultado</h2>
               <p>
-                <table class="table-responsive table-dark text-center mt-3">
+                <table class="table-responsive table-bordered text-center mt-3">
                   <thead>
                     <th class="text-center">Referencia</th>
                     <th class="text-center">Precio</th>
@@ -396,6 +396,7 @@ include '../modelo/conexion.php';
   </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/jquery/jquery.min.js"></script>
