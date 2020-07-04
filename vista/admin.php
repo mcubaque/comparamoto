@@ -42,11 +42,15 @@ if (!isset($_SESSION['user']))
   <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container">
       <div class="header-container d-flex align-items-center">
-        <div class="logo ">
+        <div class="logo col-lg-11 col-xs-12">
           <h1 class="text-light"><a href="../index.php"><span>ComparaTuMoto</span></a></h1>
         </div>
-        <span class="navbar-brand"><span class="">Bienvenido: </span><?php echo $_SESSION['user']?></</span>
-   		<a class="navbar-brand text-secondary"  href="../vista/logout.php">Salir</a>
+        <!-- <div class="col-lg-7 col-xs-2">
+          <span class="navbar-brand"><span>Bienvenido: </span><?php echo $_SESSION['user']?></</span>
+   		  </div> -->
+        <div class="col-lg-1 col-xs-1">  
+          <a class="btn btn-success"  href="../vista/logout.php" role="button">Salir</a>
+        </div>
       </div><!-- End Header Container -->
     </div>
   </header><!-- End Header -->

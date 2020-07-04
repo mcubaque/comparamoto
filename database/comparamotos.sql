@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 29-06-2020 a las 00:51:48
+-- Tiempo de generación: 04-07-2020 a las 22:01:59
 -- Versión del servidor: 10.1.37-MariaDB
 -- Versión de PHP: 7.2.31
 
@@ -119,7 +119,8 @@ INSERT INTO `detalles` (`id_detalle`, `id_marca`, `id_category`, `referencia`, `
 (8, 4, 1, 'STX-150', '4900000', 'SOHC 4T', '149 cc', '12.5 hp ', 'Manual', '4T', 'Aire', '1', '7000 rpm', 'Electrico', 'Cadena', '1330 mm', '90/90/17', '110/80/17', 'Disco 240 mm', 'Tambor', '1070 mm', '117 kg', '4.76 Gal', '9.2:1', 'Telescopica hidraulica', 'Doble amortiguador regulable', 'DC-CDI', '6 Velocidades'),
 (9, 2, 1, 'Discover-150S', '4900000', 'OHC 4T', '144.8 cc', '14.3 hp', 'Manual', '4T', 'Aire', '1', '8500 rpm', 'Electrico Y Patada', 'Cadena', '1305 mm', '80/100/17', '100/90/17', 'Disco perforado 240 mm', 'Tambor 130 mm', '795 mm', '130 kg', '10 L', '9.3:1', 'Telescopica hidraulica', 'Monoshock con nitro', 'DC-CDI', '5 Velocidades'),
 (10, 5, 1, 'TNT-25', '14222000', 'DOHC 4V 4T', '249.2 hp', '25.1 hp', 'Manual', '4T', 'Liquida', '1', '9000 rpm', 'Electrico', 'Cadena', '1400 mm', '110/70/17', '140/60/17', 'Disco 280 mm', 'Disco', '810 mm', '143 kg', '20 L', '11.2:1', 'Telescopica invertida 120 mm', 'Monoamortiguador 51 mm', 'CDI', '6 Velocidades'),
-(11, 2, 1, 'BOXER-100', '3499000', 'OCH', '99.27 cc', '8.2 hp', 'Manual', '4T', 'Aire', '1', 'ND', 'Electrico y Patada', 'Cadena', 'ND', '2.75X17', '3.00X17', 'Tambor', 'Tambor', 'ND', '95 kg', '2.77 Gal', 'ND', 'Telescopica Hidraulica', 'Doble espiral regulable', 'CDI', '4 Velocidades');
+(11, 2, 1, 'BOXER-100', '3499000', 'OCH', '99.27 cc', '8.2 hp', 'Manual', '4T', 'Aire', '1', 'ND', 'Electrico y Patada', 'Cadena', 'ND', '2.75X17', '3.00X17', 'Tambor', 'Tambor', 'ND', '95 kg', '2.77 Gal', 'ND', 'Telescopica Hidraulica', 'Doble espiral regulable', 'CDI', '4 Velocidades'),
+(12, 5, 1, 'TNT-302', '17500000', 'DOHC', '300 cc', '38 hp', 'Manual', '4T', 'Liquida', '2', '12000 rpm', 'Electrico', 'Cadena', '1405 mm', '110/70/17', '140/60/17', 'Doble disco', 'Disco', '795 mm', '183 kg', '16 lt', 'ND', 'TelescÃ³pica invertida', 'Monoamortiguador regulable', 'CDI', '6 Velocidades');
 
 -- --------------------------------------------------------
 
@@ -218,7 +219,7 @@ ALTER TABLE `category`
 -- AUTO_INCREMENT de la tabla `detalles`
 --
 ALTER TABLE `detalles`
-  MODIFY `id_detalle` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
+  MODIFY `id_detalle` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
 -- Restricciones para tablas volcadas
